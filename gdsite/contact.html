@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Geometry Dash</title>
+  <link rel="icon" href="images/cube.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Geometry Dash</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="jeu.html">Le jeu</a>
+      <a href="progression.html">Ma progression</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Contact</h2>
+      <p>Répondez à ces quelques questions et laissez-moi un message.</p>
+      
+      <form action="merci.html" method="POST">
+        <input type="hidden" value="merci.html">
+
+        <label for="Nom">Nom :</label>
+        <input type="text" id="Nom" name="Nom">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+
+        <p>Connaissiez-vous Geometry Dash ?
+          <input type="radio" id="oui" name="connaissait" value="oui" checked>
+          <label class="cote" for="oui">Oui</label>
+          <input type="radio" id="non" name="connaissait" value="non">
+          <label class="cote" for="non">Non</label>
+        </p>
+
+        <label for="niveau">Parmi mes niveaux avec extraits vidéos, lequel préférez-vous ?</label>
+        <select id="niveau" name="niveau">
+          <option>Absolute Meltdown</option>
+          <option>Cosmic Dolphin</option>
+          <option>Try Together</option>
+          <option>Different Space</option>
+        </select>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+        <p><button type="submit">Envoyer</button></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
