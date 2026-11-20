@@ -266,6 +266,7 @@ footer {
   padding: 8px 18px;
   border-radius: 30px;
   margin: -10px 0 30px;
+  text-decoration: none;
 }
 
 .about .suite {
@@ -322,6 +323,53 @@ footer {
   box-shadow: none;
 }
 
+.stage-section {
+  background: var(--fonce);
+  color: white;
+  border-top: 6px solid var(--framboise);
+}
+
+.stage-section h2 {
+  color: white;
+}
+
+.stage-intro {
+  max-width: 600px;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.stage-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 35px 0;
+}
+
+.stage-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid var(--rose);
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.stage-card h3 {
+  color: var(--jaune);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.stage-card p {
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.stage-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 @media (max-width: 650px) {
   nav {
     padding: 18px 5%;
@@ -351,6 +399,7 @@ footer {
     <a href="#home">Accueil</a>
     <a href="#about">À propos</a>
     <a href="#projects">Projet</a>
+    <a href="#stage">Stage</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -370,7 +419,7 @@ footer {
     et mon premier projet.
   </p>
 
-  <p class="stage">À la recherche d'un stage de 2 mois (du 1er mars au 23 avril 2027)</p>
+  <a href="#stage" class="stage">À la recherche d'un stage de 2 mois (du 1er mars au 23 avril 2027)</a>
 
   <a href="#projects" class="btn">Découvrir mon projet ↗</a>
 </header>
@@ -391,11 +440,6 @@ footer {
     Plus tard, j'aimerais beaucoup continuer à coder
     et créer mes propres sites. Pour l'instant, j'apprends les bases
     du web avec HTML et CSS, et je découvre peu à peu JavaScript.
-  </p>
-
-  <p class="suite">
-    Je recherche actuellement un stage de 2 mois, du 1er mars au 23 avril 2027,
-    pour mettre mes compétences en pratique sur des projets concrets.
   </p>
 
   <div class="skills">
@@ -444,6 +488,40 @@ footer {
         Voir le projet ↗
       </a>
     </div>
+  </div>
+</section>
+
+<section class="stage-section" id="stage">
+  <h2>Je recherche un stage</h2>
+
+  <p class="stage-intro">
+    Étudiante au CNAM en formation d'assistante intégratrice web,
+    je recherche un stage de 2 mois pour mettre mes compétences
+    en pratique sur des projets concrets.
+  </p>
+
+  <div class="stage-cards">
+    <div class="stage-card">
+      <h3>Durée</h3>
+      <p>2 mois</p>
+    </div>
+    <div class="stage-card">
+      <h3>Période</h3>
+      <p>Du 1er mars au 23 avril 2027</p>
+    </div>
+    <div class="stage-card">
+      <h3>Ce que je sais faire</h3>
+      <p>Intégrer et structurer des pages web avec HTML et CSS</p>
+    </div>
+    <div class="stage-card">
+      <h3>Ce que j'apprends</h3>
+      <p>JavaScript et algorithmique</p>
+    </div>
+  </div>
+
+  <div class="stage-btns">
+    <a href="https://mail.google.com/mail/?view=cm&to=plemicines@gmail.com" target="_blank" class="btn">Me proposer un stage ♡</a>
+    <a href="cv-ines-gluscevic.pdf" target="_blank" class="btn btn-alt">Voir mon CV ↗</a>
   </div>
 </section>
 
