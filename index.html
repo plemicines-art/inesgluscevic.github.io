@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fff;
+  color: #29252a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 9%;
+  border-bottom: 1px solid #f3edf0;
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,.95);
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #625b61;
+  margin-left: 25px;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #ce8ba5;
+}
+
+section {
+  padding: 100px 12%;
+}
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag {
+  color: #c17d98;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(45px, 7vw, 76px);
+  font-weight: 500;
+  line-height: 1.15;
+  max-width: 750px;
+}
+
+h1 span {
+  color: #d59bb1;
+}
+
+.description {
+  color: #827b81;
+  line-height: 1.9;
+  max-width: 510px;
+  margin: 25px 0 30px;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 14px 24px;
+  background: #f2dfe7;
+  color: #87576c;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #e9c6d5;
+  transform: translateY(-3px);
+}
+
+.small-title {
+  color: #c17d98;
+  letter-spacing: 3px;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 39px;
+  margin-bottom: 25px;
+}
+
+.about {
+  background: #fcf9fa;
+}
+
+.about p {
+  color: #777078;
+  line-height: 2;
+  max-width: 650px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.skills span {
+  border: 1px solid #ead6df;
+  padding: 11px 18px;
+  border-radius: 4px;
+  color: #a66e85;
+  font-size: 13px;
+}
+
+.project-card {
+  border: 1px solid #f0e5ea;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 650px;
+  transition: .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(190,140,160,.12);
+}
+
+.project-image {
+  background: #f8edf1;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c18ba1;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+.project-info {
+  padding: 30px;
+}
+
+.project-info p {
+  color: #827b81;
+  line-height: 1.8;
+  font-size: 14px;
+  margin: 15px 0 25px;
+}
+
+.project-info a {
+  color: #bd7e98;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.contact {
+  background: #fcf9fa;
+  text-align: center;
+}
+
+.contact p {
+  color: #827b81;
+  margin-bottom: 25px;
+}
+
+.contact .btn {
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #aaa0a7;
+  font-size: 12px;
+}
+
+@media(max-width: 650px) {
+  nav {
+    padding: 20px 5%;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 11px;
+  }
+
+  section {
+    padding: 75px 7%;
+  }
+
+  .hero {
+    min-height: 550px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Mon portfolio.</div>
+  <div>
+    <a href="#home">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projet</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="tag">BIENVENUE SUR MON PORTFOLIO ♡</div>
+
+  <h1>Bonjour, moi c'est <span>[Ton prénom].</span></h1>
+
+  <p class="description">
+    Je suis étudiante / développeurse débutante
+    et passionnée par le monde du numérique.
+    Je vous invite à découvrir mon univers, mes compétences
+    et mon premier projet.
+  </p>
+
+  <a href="#projects" class="btn">Découvrir mon projet ↗</a>
+</section>
+
+<section class="about" id="about">
+  <div class="small-title">QUI SUIS-JE ?</div>
+  <h2>À propos de moi.</h2>
+
+  <p>
+    Je m'appelle Ines et je suis actuellement
+    formation assistante intégratrice web au CNAM.
+    J'aime apprendre, découvrir de nouvelles choses
+    et développer mes compétences.
+    Ce portfolio me permet de présenter mon parcours,
+    mes connaissances et les projets que je réalise.
+  </p>
+
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>[Compétence 3]</span>
+    <span>[Compétence 4]</span>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="small-title">CE QUE JE RÉALISE</div>
+  <h2>Mon projet.</h2>
+
+  <div class="project-card">
+    <div class="project-image">
+      Mon premier projet ♡
+    </div>
+
+    <div class="project-info">
+      <div class="small-title">PROJET 01</div>
+      <h3>Découvrir mon site géometry dash</h3>
+
+      <p>
+       J'ai voulu réaliser un site sur un de mes jeux vidéos préféré en expliquant les règles ainsi que ma progression et mon gameplay
+      </p>
+
+      <a href="[Lien vers ton projet GitHub]" target="_blank">
+        Voir le projet sur GitHub ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="small-title">RESTONS EN CONTACT</div>
+  <h2>Parlons ensemble.</h2>
+
+  <p>Une question ou une opportunité ? N'hésitez pas à me contacter.</p>
+
+  <a href="mailto:plemicines@gmail.com" class="btn">
+    Me contacter ♡
+  </a>
+</section>
+
+<footer>
+  © 2026 Ines ♡
+</footer>
+
+</body>
+</html>
