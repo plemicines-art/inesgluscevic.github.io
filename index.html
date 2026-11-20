@@ -256,6 +256,60 @@ footer {
   font-size: 13px;
 }
 
+.about .suite {
+  margin-top: 18px;
+}
+
+.skills small {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.details {
+  margin: 0 0 20px 20px;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.tags span {
+  background: var(--rose);
+  color: var(--framboise);
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.contact-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-btns .btn {
+  margin: 0;
+}
+
+.btn-alt {
+  background: white;
+  color: var(--framboise);
+  border: 2px solid var(--framboise);
+  box-shadow: none;
+}
+
+.btn-alt:hover {
+  background: var(--rose);
+  box-shadow: none;
+}
+
 @media (max-width: 650px) {
   nav {
     padding: 18px 5%;
@@ -319,10 +373,16 @@ footer {
     mes connaissances et les projets que je réalise.
   </p>
 
+  <p class="suite">
+    Plus tard, j'aimerais beaucoup continuer à coder
+    et créer mes propres sites. Pour l'instant, j'apprends les bases
+    du web avec HTML et CSS, et je découvre peu à peu JavaScript.
+  </p>
+
   <div class="skills">
     <span>HTML</span>
     <span>CSS</span>
-    <span>JavaScript</span>
+    <span>JavaScript <small>(en cours d'apprentissage)</small></span>
     <span>VS Code</span>
   </div>
 </section>
@@ -343,6 +403,24 @@ footer {
         j'y explique les règles, ma progression et mon gameplay.
       </p>
 
+      <p>
+        C'est un site de plusieurs pages (Accueil, Le jeu, Ma progression
+        et Contact), créé pour un TP de HTML et CSS au CNAM.
+      </p>
+
+      <ul class="details">
+        <li>Une page pour présenter le jeu : un cube qui saute en rythme pour éviter des obstacles</li>
+        <li>Une page pour raconter ma progression dans les niveaux</li>
+        <li>Un menu commun à toutes les pages pour naviguer facilement</li>
+        <li>Un décor néon violet et rose inspiré de l'univers du jeu</li>
+      </ul>
+
+      <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Site multi-pages</span>
+      </div>
+
       <a class="btn" href="https://plemicines-art.github.io/inesgluscevic.github.io/gdsite/indexgd" target="_blank">
         Voir le projet ↗
       </a>
@@ -355,7 +433,11 @@ footer {
 
   <p>Une question ou une opportunité ? N'hésitez pas à me contacter.</p>
 
-  <a href="https://mail.google.com/mail/?view=cm&to=plemicines@gmail.com" target="_blank" class="btn">Me contacter ♡</a>
+  <div class="contact-btns">
+    <a href="https://mail.google.com/mail/?view=cm&to=plemicines@gmail.com" target="_blank" class="btn">Me contacter ♡</a>
+    <a href="https://www.linkedin.com/in/ines-gluscevic" target="_blank" class="btn btn-alt">Mon LinkedIn ↗</a>
+    <a href="cv-ines-gluscevic.pdf" target="_blank" class="btn btn-alt">Mon CV ↗</a>
+  </div>
 
   <p class="email">Ou écrivez-moi directement à : <strong>plemicines@gmail.com</strong></p>
 </section>
